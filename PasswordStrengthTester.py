@@ -19,7 +19,7 @@ if pwd_check:
 else:
     print('Password is Weak, Missing the following conditions:')
     if(len(pwd) < min_length):
-        print('- Needs to be at least 8 Characters long')
+        print('- Needs to be at least ' + min_length + ' Characters long')
     if (cap_char_count < 1):
         print('- Needs at least 1 capital letter')
     if (num_count < 1):
